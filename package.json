@@ -1,0 +1,74 @@
+{
+  "bugs": {
+    "email": "community@parse.com",
+    "url": "https://www.parse.com/help"
+  },
+  "dependencies": {
+    "xmlhttprequest": ">=1.3.0"
+  },
+  "description": "The Parse JavaScript SDK",
+  "devDependencies": {
+    "babel-jest": "^5.0.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.2.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-qunit": "~0.2.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "jasmine-reporters": "^1.0.0",
+    "jest-cli": "^0.4.10",
+    "phantomjs": "~1.9.0-1"
+  },
+  "directories": {},
+  "files": [
+    "build/parse-latest.js"
+  ],
+  "homepage": "http://www.parse.com",
+  "jest": {
+    "collectCoverage": true,
+    "scriptPreprocessor": "node_modules/babel-jest",
+    "setupTestFrameworkScriptFile": "setup-jest.js",
+    "testPathDirs": [
+      "src/es6"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/test_helpers/"
+    ]
+  },
+  "keywords": [
+    "api",
+    "cloud",
+    "mobile"
+  ],
+  "main": "build/parse-latest.js",
+  "maintainers": [
+    {
+      "name": "bklimt",
+      "email": "klimt@parse.com"
+    },
+    {
+      "name": "lacker",
+      "email": "lacker@gmail.com"
+    },
+    {
+      "name": "grantland",
+      "email": "grantlandchew@gmail.com"
+    },
+    {
+      "name": "nlutsenko",
+      "email": "nlutsenko@me.com"
+    },
+    {
+      "name": "andrewimm",
+      "email": "andrewi@fb.com"
+    }
+  ],
+  "name": "parse",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "NODE_ENV=test jest"
+  },
+  "version": "1.5.0"
+}
