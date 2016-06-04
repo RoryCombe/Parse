@@ -2012,7 +2012,9 @@
       Storage.clear = function() {
         AsyncStorage.clear();
       };
-    } catch (e) { }
+    } catch (e) {
+      console.warn("AsyncStorage error: ", e.message);
+    }
   }
   if (!Storage.async && !Storage.getItem) {
     var memMap = Storage.inMemoryMap = {};
