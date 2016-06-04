@@ -1969,7 +1969,7 @@
   } else if (typeof require === 'function') {
     var AsyncStorage;
     try {
-      AsyncStorage = eval("require('AsyncStorage')"); // jshint ignore:line
+      AsyncStorage = require('AsyncStorage'); // jshint ignore:line
 
       Storage.async = true;
 
